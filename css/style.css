@@ -6,25 +6,40 @@ body {
     padding: 0;
 }
 
-h2 {
-    text-align: center;
+.dashboard-header {
+    background: white;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.header-title h1 {
     margin: 0;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 32px;
     color: #1f2937;
 }
 
-.navbar {
-  background: white;
-  color: #fff8dc;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+.header-title p {
+    margin-top: 8px;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+
+.header-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.header-filter label {
+    font-weight: 600;
+    color: #374151;
 }
 
 .navbar button {
