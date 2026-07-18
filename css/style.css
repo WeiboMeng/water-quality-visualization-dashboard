@@ -83,29 +83,12 @@ body {
 }
 
 #container {
-  display: flex;
-  height: calc(100vh - 100px);
-  width: 100%;
+    width: 100%;
 }
 
 #mapContainer {
-  flex: 3;
   width: 100%;
   height: 600px;
-}
-
-#sidePanel {
-  flex: 0.7;
-  padding: 10px;
-  border-left: 1px solid #ccc;
-  overflow-y: 5px;
-  background: #f8f8f8;
-}
-
-.ranking-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 18px;
 }
 
 .ranking-item {
