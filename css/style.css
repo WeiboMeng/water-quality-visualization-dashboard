@@ -15,6 +15,30 @@ body {
     border-bottom: 1px solid #e5e7eb;
 }
 
+.dashboard-content {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+}
+
+.dashboard-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+
+}
 
 .header-title h1 {
     margin: 0;
@@ -83,6 +107,13 @@ body {
 
 .ranking-item {
   margin-bottom: 5px;
+}
+
+.ranking-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
 .controls {
