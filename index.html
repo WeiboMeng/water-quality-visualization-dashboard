@@ -59,19 +59,22 @@
     <button onclick="zoomOut()">-</button>
   </div>
 
-  <div class="container">
-    <div class="pie-chart-container">
-        <canvas id="waterCategoryChart"></canvas>
-    </div>
-    <div class="chart-row">
-      <div class="chart-container">
-          <canvas id="riverQualityChart"></canvas>
+  <section class="charts-section">
+    <div class="dashboard-card">
+      <h2>Water Quality Statistics</h2>
+      <div class="chart-row">
+        <div class="pie-chart-container">
+            <canvas id="waterCategoryChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="riverQualityChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="reservoirQualityChart"></canvas>
+        </div>
       </div>
-      <div class="chart-container">
-          <canvas id="reservoirQualityChart"></canvas>
-      </div>
     </div>
-  </div>
+  </section>
 
   <h2 style="font :14px sans-serif; color: #555; text-align: center;" >Reference link:
     https://www.mee.gov.cn/ywdt/xwfb/202404/t20240428_1071851.shtml(First quarter)<br>
