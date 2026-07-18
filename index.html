@@ -11,16 +11,26 @@
 </head>
   
 <body>
-  <h2>Visualization of China's water quality in 2024</h2>
-  <div class="navbar">
-    <label for="timeRange">Select time range：</label>
+
+<header class="dashboard-header">
+
+  <div class="header-title">
+    <h1>Water Quality Dashboard</h1>
+    <p>Interactive visualization of China's surface water quality in 2024</p>
+  </div>
+
+  <div class="header-filter">
+    <label for="timeRange">Quarter</label>
+
     <select id="timeRange" onchange="updateMap()">
-      <option value="First quarter">First quarter</option>
-      <option value="Second quarter">Second quarter</option>
-      <option value="Third quarter">Third quarter</option>
-      <option value="Fourth quarter">Fourth quarter</option>
+      <option value="First quarter">First Quarter</option>
+      <option value="Second quarter">Second Quarter</option>
+      <option value="Third quarter">Third Quarter</option>
+      <option value="Fourth quarter">Fourth Quarter</option>
     </select>
   </div>
+
+</header>
 
   <div id="container">
     <div id="mapContainer"></div>
