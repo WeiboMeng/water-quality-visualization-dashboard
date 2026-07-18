@@ -143,9 +143,39 @@ body {
     gap: 20px;
 }
 
-
 .chart-container,
 .pie-chart-container {
     width: 100%;
     height: 350px;
+}
+
+@media (max-width: 900px) {
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .dashboard-content {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .charts-section {
+        padding: 0 15px;
+    }
+
+    .chart-row {
+        grid-template-columns: 1fr;
+    }
+
+    #mapContainer {
+        height: 450px;
+    }
+    
+    .controls {
+        top: 160px;
+        left: 15px;
+    }
 }
