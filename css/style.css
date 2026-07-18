@@ -149,6 +149,14 @@ body {
     height: 350px;
 }
 
+footer{
+    margin-top:5px;
+    padding:10px;
+    background:#FFFFFF;
+    color:black;
+    text-align:center;
+}
+
 @media (max-width: 900px) {
 
     .dashboard-header {
