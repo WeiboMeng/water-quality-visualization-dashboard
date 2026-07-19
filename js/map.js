@@ -48,30 +48,6 @@ function updateMap() {
       data: data,
       zoom: currentZoom
     }],
-    graphic: [
-      {
-        type: 'text',
-        left: 'center',
-        top: '88%',
-        style: {
-          text: 'Blue is the ranking of provinces with better water quality, red is the ranking of provinces with worse water quality. Provinces with white color are no longer in the ranking.',
-          font: '14px sans-serif',
-          fill: '#555',
-          textAlign: 'center'
-        }
-      },
-      {
-        type: 'text',
-        left: 'center',
-        top: '92%',
-        style: {
-          text: 'The darker the color, the higher the ranking. That is, dark blue is the province with the least water pollution, and dark red is the province with the most serious water pollution.',
-          font: '14px sans-serif',
-          fill: '#555',
-          textAlign: 'center'
-        }
-      }
-    ]
   };
 
   chart.setOption(option);
