@@ -38,7 +38,7 @@ function updateMap() {
     series: [{
       type: 'map',
       map: 'china',
-      roam: true,
+      roam: false,
       label: { 
         show: true,
         formatter: function (params) {
