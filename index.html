@@ -36,7 +36,13 @@
     <section class="map-section">
       <div class="dashboard-card">
         <h2>China Water Quality Map</h2>
-        <div id="mapContainer"></div>
+        <div class="map-wrapper">
+          <div id="mapContainer"></div>
+          <div class="controls">
+            <button onclick="zoomIn()">+</button>
+            <button onclick="zoomOut()">-</button>
+          </div>
+        </div>
       </div>
     </section>
   
@@ -52,11 +58,6 @@
         <div id="badRankingList"></div>
       </div>
     </section>
-  </div>
-
-  <div class="controls">
-    <button onclick="zoomIn()">+</button>
-    <button onclick="zoomOut()">-</button>
   </div>
 
   <section class="charts-section">
