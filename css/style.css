@@ -198,4 +198,8 @@ footer{
         top: 160px;
         left: 15px;
     }
+    .chart-container,
+    .pie-chart-container {
+        height:300px;
+    }
 }
