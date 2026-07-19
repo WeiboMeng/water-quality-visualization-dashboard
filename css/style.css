@@ -164,9 +164,26 @@ body {
 
 .chart-container canvas,
 .pie-chart-container canvas {
-
     max-width:100%;
+}
 
+.reference-links {
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+.reference-links a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.reference-links a:hover {
+    text-decoration: underline;
 }
 
 footer{
