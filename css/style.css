@@ -162,6 +162,13 @@ body {
     height: 350px;
 }
 
+.chart-container canvas,
+.pie-chart-container canvas {
+
+    max-width:100%;
+
+}
+
 footer{
     margin-top:5px;
     padding:10px;
@@ -180,6 +187,7 @@ footer{
 
     .dashboard-content {
         grid-template-columns: 1fr;
+        margin:20px auto;
         padding: 0 15px;
     }
 
@@ -196,9 +204,10 @@ footer{
     }
     
     .controls {
-        top: 160px;
-        left: 15px;
+        top:20px;
+        left:15px;
     }
+    
     .chart-container,
     .pie-chart-container {
         height:300px;
