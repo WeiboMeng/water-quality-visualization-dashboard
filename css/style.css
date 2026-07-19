@@ -82,6 +82,10 @@ body {
     min-height: 650px;
 }
 
+.map-wrapper {
+    position: relative;
+}
+
 #container {
     width: 100%;
 }
@@ -103,8 +107,8 @@ body {
 
 .controls {
   position: absolute;
-  top: 180px;
-  left: 30px;
+  top: 20px;
+  left: 20px;
   z-index: 10;
   background: rgba(255, 255, 255, 0.9);
   padding: 10px;
