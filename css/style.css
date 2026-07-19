@@ -169,6 +169,11 @@ body {
 
 }
 
+reference{font:14px sans-serif; 
+          color: #555; 
+          text-align: center;
+}   
+
 footer{
     margin-top:5px;
     padding:10px;
@@ -212,4 +217,9 @@ footer{
     .pie-chart-container {
         height:300px;
     }
+
+    reference{font:14px sans-serif; 
+          color: #555; 
+          text-align: justify;
+    }   
 }
