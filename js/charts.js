@@ -65,4 +65,9 @@ function updateCharts() {
                 ], 
                 "Nutritional status of 6 lakes (reservoirs)"
             );
+            window.addEventListener("resize", function () {
+                Object.values(chartInstances).forEach(chart => {
+                    chart.resize();
+                });
+            });
         }
