@@ -18,6 +18,8 @@ This project was originally developed as a university coursework project and has
 - Map zoom controls for better user interaction
 - Local GeoJSON map data for reliable deployment
 
+---
+
 ## Technologies Used
 
 - HTML5
@@ -28,8 +30,9 @@ This project was originally developed as a university coursework project and has
 - GitHub Pages
 
 ## Project Structure
-water-quality-visualization-dashboard/
 
+```text
+water-quality-visualization-dashboard/
 ├── assets/
 │ ├── china.json
 │ └── screenshots/
@@ -47,6 +50,9 @@ water-quality-visualization-dashboard/
 │
 ├── index.html
 └── README.md
+```
+
+---
 
 ## Installation and Usage
 
@@ -70,11 +76,15 @@ Live Demo:
 
 https://weibomeng.github.io/water-quality-visualization-dashboard/
 
+---
+
 Screenshots
 Desktop View
 assets/screenshots/dashboard-desktop.png
 Mobile View
 assets/screenshots/dashboard-mobile.jpg
+
+---
 
 Future Improvements
 
@@ -89,6 +99,8 @@ Adding more historical water quality datasets
 Improving data filtering and comparison functions
 Adding additional visualization methods
 Connecting the dashboard with a backend API for dynamic data updates
+
+---
 
 License
 
