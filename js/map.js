@@ -1,6 +1,6 @@
 const chart = echarts.init(document.getElementById('mapContainer'));
 
-fetch('https://geo.datav.aliyun.com/areas/bound/geojson?code=100000_full')
+fetch('assets/china.json')
 .then(res => res.json())
 .then(geoJson => {
   echarts.registerMap('china', geoJson);
