@@ -80,9 +80,9 @@ https://weibomeng.github.io/water-quality-visualization-dashboard/
 
 Screenshots
 Desktop View
-assets/screenshots/dashboard-desktop.png
+![Desktop View](assets/screenshots/dashboard-desktop.png)
 Mobile View
-assets/screenshots/dashboard-mobile.jpg
+![Mobile View](assets/screenshots/dashboard-mobile.jpg)
 
 ---
 
