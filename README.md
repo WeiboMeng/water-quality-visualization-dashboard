@@ -6,13 +6,13 @@ The Water Quality Visualization Dashboard is an interactive data visualization p
 
 The dashboard allows users to explore provincial water quality rankings, compare different quarters, and view statistical information through interactive maps and charts.
 
-This project was originally developed as a university coursework project and has been improved into a portfolio-ready web application with better structure, deployment, and documentation.
+The project has been improved into a portfolio-ready web application with better structure, deployment, and documentation.
 
 ## Features
 
 - Interactive China map displaying provincial water quality rankings
 - Quarterly water quality data filtering
-- Dynamic ranking lists for provinces with better and worse water quality
+- Dynamic ranking lists showing provinces with better and worse water quality
 - Interactive data visualizations using charts
 - Responsive layout supporting desktop and mobile devices
 - Map zoom controls for better user interaction
@@ -34,19 +34,19 @@ This project was originally developed as a university coursework project and has
 ```text
 water-quality-visualization-dashboard/
 ├── assets/
-│ ├── china.json
-│ └── screenshots/
-│ ├── dashboard-desktop.png
-│ └── dashboard-mobile.jpg
+│   ├── china.json
+│   └── screenshots/
+│       ├── dashboard-desktop.png
+│       └── dashboard-mobile.jpg
 │
 ├── css/
-│ └── style.css
+│   └── style.css
 │
 ├── js/
-│ ├── app.js
-│ ├── charts.js
-│ ├── data.js
-│ └── map.js
+│   ├── app.js
+│   ├── charts.js
+│   ├── data.js
+│   └── map.js
 │
 ├── index.html
 └── README.md
@@ -64,34 +64,33 @@ water-quality-visualization-dashboard/
 git clone https://github.com/WeiboMeng/water-quality-visualization-dashboard.git
 ```
 
-2. Open index.html in a web browser.
+2. Open `index.html` in a web browser.
 
 No additional installation or dependencies are required.
 
-Deployment
+## Deployment
 
 The project is deployed using GitHub Pages.
 
-Live Demo:
+## Live Demo
 
 https://weibomeng.github.io/water-quality-visualization-dashboard/
 
 ---
 
-Screenshots
-###Desktop View
+## Screenshots
+
+### Desktop View
+
 ![Desktop View](assets/screenshots/dashboard-desktop.png)
-###Mobile View
+
+### Mobile View
+
 ![Mobile View](assets/screenshots/dashboard-mobile.jpg)
 
 ---
 
-Future Improvements
-
-- Adding more data
-- Adding more charts
-- Auto update data
-- Add more list can be chose for users
+## Future Improvements
 
 Possible future improvements include:
 
@@ -102,6 +101,6 @@ Connecting the dashboard with a backend API for dynamic data updates
 
 ---
 
-License
+## License
 
 This project is licensed under the MIT License.
