@@ -79,9 +79,9 @@ https://weibomeng.github.io/water-quality-visualization-dashboard/
 ---
 
 Screenshots
-Desktop View
+###Desktop View
 ![Desktop View](assets/screenshots/dashboard-desktop.png)
-Mobile View
+###Mobile View
 ![Mobile View](assets/screenshots/dashboard-mobile.jpg)
 
 ---
