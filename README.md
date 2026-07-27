@@ -1,5 +1,16 @@
 # Water Quality Visualization Dashboard
 
+Interactive dashboard visualizing China's 2024 surface water quality data using JavaScript, ECharts and Chart.js.
+
+## Deployment
+
+The project is deployed using GitHub Pages.
+
+Live Demo:
+
+https://weibomeng.github.io/water-quality-visualization-dashboard/
+
+
 ## Project Overview
 
 The Water Quality Visualization Dashboard is an interactive data visualization project that presents China's surface water quality data in 2024.
@@ -67,14 +78,6 @@ git clone https://github.com/WeiboMeng/water-quality-visualization-dashboard.git
 2. Open `index.html` in a web browser.
 
 No additional installation or dependencies are required.
-
-## Deployment
-
-The project is deployed using GitHub Pages.
-
-## Live Demo
-
-https://weibomeng.github.io/water-quality-visualization-dashboard/
 
 ---
 
