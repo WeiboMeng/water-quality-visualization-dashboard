@@ -1,148 +1,232 @@
-/* =========================
-   Global Reset
-========================= */
-
-* {
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-
-/* =========================
-   Root Variables
-========================= */
-
-:root {
-
-    --primary-color: #2563eb;
-    --text-color: #1f2937;
-    --secondary-text: #6b7280;
-    --background-color: #ffffff;
-    --section-background: #f8fafc;
-    --border-color: #e5e7eb;
-
-    --container-width: 1100px;
-
+.dashboard-header {
+    background: white;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
 }
 
+.dashboard-content {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
 
-/* =========================
-   Base Styles
-========================= */
-
-html {
-
-    scroll-behavior: smooth;
+.dashboard-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 
 }
 
-body {
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    color: var(--text-color);
-
-    background: var(--background-color);
-
-    line-height: 1.6;
+.dashboard-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
 
 }
 
+.header-title h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #1f2937;
+}
 
-/* =========================
-   Layout
-========================= */
+.header-title p {
+    margin-top: 8px;
+    color: #6b7280;
+    font-size: 16px;
+}
 
-section {
+.header-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-    padding: 80px 20px;
+.header-filter label {
+    font-weight: 600;
+    color: #374151;
+}
 
+.navbar button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.header-filter select {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+}
+
+.map-section {
+    min-height: 650px;
+}
+
+.map-wrapper {
+    position: relative;
+}
+
+.map-description {
+    margin: 15px auto;
+    text-align:justify;
+    color:#555;
+    font-size:14px;
+    line-height:1.5;
+    max-width: 900px;
+}
+
+#container {
+    width: 100%;
+}
+
+#mapContainer {
+  width: 100%;
+  height: 600px;
+}
+
+.ranking-item {
+  margin-bottom: 5px;
+}
+
+.ranking-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.controls button {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 5px;
+  padding: 6px 12px;
+  font-size: 14px;
 }
 
 .container {
+    padding: 20px; 
+}
 
+#goodRankingList,
+#badRankingList {
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.charts-section {
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    padding: 0 30px;
+}
+
+.chart-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.chart-container,
+.pie-chart-container {
     width: 100%;
-
-    max-width: var(--container-width);
-
-    margin: 0 auto;
-
+    height: 350px;
 }
 
-
-/* =========================
-   Typography
-========================= */
-
-h1 {
-
-    font-size: 3rem;
-
-    margin-bottom: 20px;
-
+.chart-container canvas,
+.pie-chart-container canvas {
+    max-width:100%;
 }
 
-h2 {
-
-    font-size: 2rem;
-
-    margin-bottom: 20px;
-
+.reference-links {
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    max-width: 900px;
+    line-height: 1.8;
 }
 
-p {
-
-    color: var(--secondary-text);
-
-    font-size: 1rem;
-
-}
-
-
-/* =========================
-   Links
-========================= */
-
-a {
-
+.reference-links a {
+    color: #2563eb;
     text-decoration: none;
-
-    color: inherit;
-
 }
 
-
-ul {
-
-    list-style: none;
-
+.reference-links a:hover {
+    text-decoration: underline;
 }
 
-
-/* =========================
-   Images
-========================= */
-
-img {
-
-    display: block;
-
-    max-width: 100%;
-
+footer{
+    margin-top:5px;
+    padding:10px;
+    background:#FFFFFF;
+    color:black;
+    text-align:center;
 }
 
+@media (max-width: 900px) {
 
-/* =========================
-   Buttons (Reserved)
-========================= */
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 
-.btn {
+    .dashboard-content {
+        grid-template-columns: 1fr;
+        margin:20px auto;
+        padding: 0 15px;
+    }
 
-    display: inline-block;
+    .charts-section {
+        padding: 0 15px;
+    }
 
-    padding: 12px 24px;
+    .chart-row {
+        grid-template-columns: 1fr;
+    }
 
-    border-radius: 8px;
-
+    #mapContainer {
+        height: 450px;
+    }
+    
+    .controls {
+        top:20px;
+        left:15px;
+    }
+    
+    .chart-container,
+    .pie-chart-container {
+        height:300px;
+    }
 }
