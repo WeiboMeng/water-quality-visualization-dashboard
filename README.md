@@ -75,9 +75,7 @@ water-quality-visualization-dashboard/
 git clone https://github.com/WeiboMeng/water-quality-visualization-dashboard.git
 ```
 
-2. Open `index.html` in a web browser.
-
-No additional installation or dependencies are required.
+2. Open the project using a local web server (such as VS Code Live Server), then open the local address provided by the server in your web browser.
 
 ---
 
