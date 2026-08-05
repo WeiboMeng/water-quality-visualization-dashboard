@@ -1,11 +1,22 @@
 const chart = echarts.init(document.getElementById('mapContainer'));
 
 fetch('assets/china.json')
-.then(res => res.json())
-.then(geoJson => {
-  echarts.registerMap('china', geoJson);
-  updateMap();
-});
+  .then(response => {
+      if (!response.ok) {
+          throw new Error("Failed to load china.json");
+      }
+      return response.json();
+  })
+  .then(geoJson => {
+      echarts.registerMap('china', geoJson);
+      updateMap();
+  })
+  .catch(error => {
+      console.error(error);
+  
+      document.getElementById("mapContainer").innerHTML =
+          "<p style='text-align:center;padding-top:100px;'>Failed to load map data. Please refresh the page.</p>";
+  });
 
 function updateMap() {
   const quarter = document.getElementById("timeRange").value;
@@ -64,3 +75,7 @@ function zoomOut() {
   currentZoom /= 1.2;
   updateMap();
 }
+
+window.addEventListener("resize", () => {
+  chart.resize();
+});
